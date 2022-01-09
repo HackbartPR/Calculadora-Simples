@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 30vw;
+  height: 80vh;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  display: grid;
+  grid-template-areas: 'display display' 'number operator';
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-gap: 5px;
+  border-radius: 2%;
+}
+
+.display {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  grid-area: display;
+  background-color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.numbers {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  grid-area: number;
+  display: grid;
+  grid-template-areas: 'seven eight nine' 'four five six' 'one two three' 'null_1 zero clear';
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 30px;
+}
+.operators {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  grid-area: operator;
+  display: flex;
+  flex-direction: column;
+}
+
+#zero {
+  grid-area: zero;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#null_1 {
+  grid-area: null_1;
+}
+#null_2 {
+  grid-area: clear;
+}
+#mult {
+  /* grid-area: mult; */
+  width: 100%;
+  height: 20%;
+}
+#divs {
+  /* grid-area: divs; */
+  width: 100%;
+  height: 20%;
+}
+#adder {
+  /* grid-area: adder; */
+  width: 100%;
+  height: 20%;
+}
+#subt {
+  /* grid-area: subt; */
+  width: 100%;
+  height: 20%;
+}
+#calc {
+  width: 100%;
+  height: 20%;
+  /* grid-area: calc; */
+}
